@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MaryCode Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/myinitial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script type="text/javascript" defer src="./js/common.js"></script>
+</head>
+<body>
+  <!-- 모바일 버튼 -->
+  <input type="checkbox" id="gnbcheck" name="gnbcheck">
+  <label for="gnbcheck" id="gnbbtn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <!-- navigation bar -->
+  <div class="navbar">
+    <ul class="menu-right">
+      <li><button id="profile-btn" class="fs-20">Profile</button>
+        <li><button id="port-btn" class="fs-20">ProJect</button>
+    </ul>
+  </div>
+
+  <!-- 프로필 -->
+
+    <section class="profile">
+      <div class="wrap">
+        <div class="page">
+          <h3>PROFILE</h3>
+          <div class="line"></div>
+          <div class="pro-wrap">
+            <div class="profile-left">
+              <img src="./img/캐릭터.png" alt="">
+            </div>
+            <div class="profile-right">
+              <div class="edu">
+                <h2><i class="ri-graduation-cap-line"></i>교육</h2>
+                <p>한국경영원 인재개발원 : <span> 공공데이터 융합 자바 웹 개발자 양성과정 수료</span></p>
+              </div>
+              <div class="myinfo edu">
+                <h2><i class="ri-article-line"></i>정보</h2>
+                <p>생년월일 : <span>1994.02.17</span></p>
+                <p>이름 : <span>김태기</span></p>
+              </div>
+              <div class="story">
+                <p>비즈니스 성장에 도움이 되고싶은 개발자</p>
+                <p>저의 포트폴리오에 오신걸 환영합니다!</p>
+              </div>
+              <div class="skill_Wrap">
+                <h2><i class="ri-stack-line"></i>스킬</h2>
+                <div class="skill_box">
+                  <span>Java</span>
+                  <span>Servlet</span>
+                  <span>Jsp</span>
+                  <span>String Boot</span>
+                  <span>Spring Data JPA</span>
+                  <span>Spring Security</span>
+                  <span>Mybatis</span>
+                  <span>Oracle</span>
+                  <span>MySQL</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Mustache</span>
+                  <span>Rest API</span>
+                  <span>Maven</span>
+                  <span>Gradle</span>
+                  <span>Eclipse</span>
+                  <span>IntelliJ</span>
+                  <span>Git</span>
+                  <span>AWS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  <!-- 포트폴리오 -->
+  <section class="portfolio">
+    <div class="wrap">
+      <div class="page">
+        <h3 class="fs-40 letter">PROJECT</h3>
+        <div class="line"></div>
+        <div class="card-wrap">
+          <div class="card">
+            <div class="card-img">
+              <img src="./img/port/app-board/리스트.PNG" alt="">
+            </div>
+            <div class="card-text">
+              <h4>커뮤니티 게시판</h4>
+              <h5><i class="ri-information-line"></i> 프로젝트 설명</h5>
+              <p>첫번째로 만들어본 가장 기본적인 게시판 사이트</p>
+              <h5><i class="ri-pie-chart-line"></i>참여율 100%</h5>
+              <div class="btn">
+                <a href="#ex1" rel="modal:open">상세보기</a>
+                <a href="https://github.com/Mamelcode/jsp-app-borad" target="_blank">Git Hub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="./img/port/app-movie/메인페이지1.PNG" alt="">
+            </div>
+            <div class="card-text">
+              <h4>영화 추천 사이트</h4>
+              <h5><i class="ri-information-line"></i> 프로젝트 설명</h5>
+              <p>TMDB OPEN API를 이용해서 영화 추천 및 영화 검색, 디테일 등을 제공해주는 사이트</p>
+              <h5><i class="ri-pie-chart-line"></i>참여율 100%</h5>
+              <div class="btn">
+                <a href="#ex2" rel="modal:open">상세보기</a>
+                <a href="https://github.com/Mamelcode/jsp-app-moivie" target="_blank">Git Hub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="./img/port/app-todo/메인화면.PNG" alt="">
+            </div>
+            <div class="card-text">
+              <h4>일정관리</h4>
+              <h5><i class="ri-information-line"></i> 프로젝트 설명</h5>
+              <p>일정을 관리하기 편하게 등록시키는 사이트</p>
+              <h5><i class="ri-pie-chart-line"></i>참여율 100%</h5>
+              <div class="btn">
+                <a href="#ex3" rel="modal:open">상세보기</a>
+                <a href="https://github.com/Mamelcode/spring-app-todo" target="_blank">Git Hub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img src="./img/port/app-moim/다른작성자모임.PNG" alt="">
+            </div>
+            <div class="card-text">
+              <h4>모임 사이트</h4>
+              <h5><i class="ri-information-line"></i> 프로젝트 설명</h5>
+              <p>여러가지 모임을 만들고 참여하는 사이트</p>
+              <h5><i class="ri-pie-chart-line"></i>참여율 100%</h5>
+              <div class="btn">
+                <a href="#ex4" rel="modal:open">상세보기</a>
+                <a href="https://github.com/Mamelcode/spring-app-moim" target="_blank">Git Hub</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 게시판 -->
+  <div class="modal" id="ex1">
+    <div class="modal_wrap">
+      <div class="modal_box">
+        <h2>1.개요</h2>
+        <img src="./img/port/app-board/슬라이드1.PNG" alt="">
+        <h2>2.진행순서</h2>
+        <img src="./img/port/app-board/슬라이드2.PNG" alt="">
+        <h2>3.기술스택</h2>
+        <img src="./img/port/app-board/슬라이드3.PNG" alt="">
+        <h2>4.DB 연관관계</h2>
+        <img src="./img/port/app-board/테이블연관관계.PNG" alt="">
+        <h2>5.주요기능-1</h2>
+        <img src="./img/port/app-board/슬라이드4.PNG" alt="">
+        <h2>6.주요기능-2</h2>
+        <img src="./img/port/app-board/슬라이드5.PNG" alt="">
+        <h2>7.주요기능-3</h2>
+        <img src="./img/port/app-board/슬라이드6.PNG" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- 영화 -->
+  <div class="modal" id="ex2">
+    <div class="modal_wrap">
+      <div class="modal_box">
+        <h2>1.개요</h2>
+        <img src="./img/port/app-movie/슬라이드1.PNG" alt="">
+        <h2>2.진행순서</h2>
+        <img src="./img/port/app-movie/슬라이드2.PNG" alt="">
+        <h2>3.기술스택</h2>
+        <img src="./img/port/app-movie/슬라이드3.PNG" alt="">
+        <h2>4.DB 연관관계</h2>
+        <img src="./img/port/app-movie/슬라이드4.PNG" alt="">
+        <h2>5.주요기능-1</h2>
+        <img src="./img/port/app-movie/슬라이드5.PNG" alt="">
+        <h2>6.주요기능-2</h2>
+        <img src="./img/port/app-movie/슬라이드6.PNG" alt="">
+        <h2>7.주요기능-3</h2>
+        <img src="./img/port/app-movie/슬라이드7.PNG" alt="">
+        <h2>8.주요기능-4</h2>
+        <img src="./img/port/app-movie/슬라이드8.PNG" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- 일정관리 -->
+  <div class="modal" id="ex3">
+    <div class="modal_wrap">
+      <div class="modal_box">
+        <h2>1.개요</h2>
+        <img src="./img/port/app-todo/슬라이드1.PNG" alt="">
+        <h2>2.진행순서</h2>
+        <img src="./img/port/app-todo/슬라이드2.PNG" alt="">
+        <h2>3.기술스택</h2>
+        <img src="./img/port/app-todo/슬라이드3.PNG" alt="">
+        <h2>4.DB 연관관계</h2>
+        <img src="./img/port/app-todo/테이블연관관계.PNG" alt="">
+        <h2>5.주요기능-1</h2>
+        <img src="./img/port/app-todo/슬라이드4.PNG" alt="">
+        <h2>6.주요기능-2</h2>
+        <img src="./img/port/app-todo/슬라이드5.PNG" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 모임 -->
+  <div class="modal" id="ex4">
+    <div class="modal_wrap">
+      <div class="modal_box">
+        <h2>1.개요</h2>
+        <img src="./img/port/app-moim/슬라이드1.PNG" alt="">
+        <h2>2.진행순서</h2>
+        <img src="./img/port/app-moim/슬라이드2.PNG" alt="">
+        <h2>3.기술스택</h2>
+        <img src="./img/port/app-moim/슬라이드3.PNG" alt="">
+        <h2>4.DB 연관관계</h2>
+        <img src="./img/port/app-moim/테이블연관관계.PNG" alt="">
+        <h2>5.주요기능-1</h2>
+        <img src="./img/port/app-moim/슬라이드4.PNG" alt="">
+        <h2>6.주요기능-2</h2>
+        <img src="./img/port/app-moim/슬라이드5.PNG" alt="">
+        <h2>6.주요기능-3</h2>
+        <img src="./img/port/app-moim/슬라이드6.PNG" alt="">
+        <h2>7.주요기능-4</h2>
+        <img src="./img/port/app-moim/슬라이드7.PNG" alt="">
+        <h2>8.주요기능-5</h2>
+        <img src="./img/port/app-moim/슬라이드8.PNG" alt="">
+        <h2>9.주요기능-6</h2>
+        <img src="./img/port/app-moim/슬라이드9.PNG" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+</body>
+</html>
