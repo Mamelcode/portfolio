@@ -8,17 +8,3 @@ function scrollHandler() {
     });
   }
 }
-
-$(window).on("scroll", scrollHandler);
-scrollHandler();
-//섹션 스크롤
-$(".menu-right button").on("click", function() {
-  var id = $(this).attr("id");
-  if (id == "profile-btn") {
-    $("html, body").animate({scrollTop: $(".profile").position().top}, 700)
-  }else if(id == "port-btn") {
-    $("html, body").animate({scrollTop: $(".portfolio").position().top}, 700)
-  }else if (id == "about-btn") {
-    $("html, body").animate({scrollTop: $(".about").position().top}, 700)
-  }
-});

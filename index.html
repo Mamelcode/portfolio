@@ -24,17 +24,17 @@
   <!-- navigation bar -->
   <div class="navbar">
     <ul class="menu-right">
-      <li><button id="profile-btn" class="fs-20">Profile</button>
-        <li><button id="port-btn" class="fs-20">ProJect</button>
+      <li><button id="profile-btn" class="fs-20 nav_btn">Profile</button>
+        <li><button id="port-btn" class="fs-20 nav_btn">ProJect</button>
     </ul>
   </div>
 
   <!-- 프로필 -->
 
-    <section class="profile">
+    <section class="profile" id="profile">
       <div class="wrap">
         <div class="page">
-          <h3>PROFILE</h3>
+          <h3>백엔드개발자</h3>
           <div class="line"></div>
           <div class="pro-wrap">
             <div class="profile-left">
@@ -49,9 +49,10 @@
                 <h2><i class="ri-article-line"></i>정보</h2>
                 <p>생년월일 : <span>1994.02.17</span></p>
                 <p>이름 : <span>김태기</span></p>
+                <p>Email : xorl0514@naver.com</p>
               </div>
               <div class="story">
-                <p>비즈니스 성장에 도움이 되고싶은 개발자</p>
+                <p>비즈니스 성장에 도움이 되고싶은 백엔드개발자</p>
                 <p>저의 포트폴리오에 오신걸 환영합니다!</p>
               </div>
               <div class="skill_Wrap">
@@ -66,6 +67,7 @@
                   <span>Mybatis</span>
                   <span>Oracle</span>
                   <span>MySQL</span>
+                  <span>H2</span>
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>JavaScript</span>
@@ -76,7 +78,7 @@
                   <span>Eclipse</span>
                   <span>IntelliJ</span>
                   <span>Git</span>
-                  <span>AWS</span>
+                  <span>AWS(EC2, RDS)</span>
                 </div>
               </div>
             </div>
@@ -87,7 +89,7 @@
     </section>
 
   <!-- 포트폴리오 -->
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="wrap">
       <div class="page">
         <h3 class="fs-40 letter">PROJECT</h3>
@@ -256,6 +258,19 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+$(document).ready(function(){
+  $(".nav_btn").on("click", function() {
+    var id = $(this).attr("id");
+    if (id == "profile-btn") {
+      $("html, body").animate({scrollTop: $("#profile").position().top-70}, 500)
+    }else if (id == "port-btn") {
+      $("html, body").animate({scrollTop: $("#portfolio").position().top-70}, 500)
+    }
+  });
+});
+</script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 </body>
