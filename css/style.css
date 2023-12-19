@@ -160,7 +160,6 @@ input[type=checkbox]#gnbcheck{ display: none; }
 .portfolio {
   padding: 100px 0px;
   text-align: center;
-  background-color: #f6f6f6;
 }
 
 .portfolio h3 {
@@ -177,37 +176,43 @@ input[type=checkbox]#gnbcheck{ display: none; }
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 30px 0px;
+  gap: 60px 0px;
 }
 
 .card-wrap .card{
-  width: 48%;
+  width: 100%;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
-.card-wrap .card:hover{
+.card-wrap .card:nth-child(2n){
+  background: #f9f9f9;
+}
+
+/* .card-wrap .card:hover{
   transition: 0.3s all;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
-}
+} */
 
 .card-wrap .card h4{
-  font-size: 2.0rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: 600;
+  left: -0.04em;
+  text-align:left;
 }
 
 .card-wrap .card h5{
   margin-bottom: 10px;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   display: flex;
   align-items: center;
   color:#222;
   text-align: left;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .card-wrap .card h5 i{
@@ -221,9 +226,10 @@ input[type=checkbox]#gnbcheck{ display: none; }
   justify-content: flex-start;
   margin-bottom: 20px;
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 2.0rem;
   line-height: 120%;
   color: #444;
+  font-weight: 400;
 }
 
 .card-wrap .card p span{
@@ -232,18 +238,21 @@ input[type=checkbox]#gnbcheck{ display: none; }
 
 .card-wrap .btn{
   margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-wrap .btn a{
   border: 1px solid #4A55A2;
-  width: 48%;
+  width: 48.5%;
   background: #4A55A2;
   color: #fff;
   transition: 0.3s all;
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
+  height: 45px;
+  line-height: 45px;
   border-radius: 3px;
+  font-size: 18px;
 }
 
 .card-wrap .btn a:hover{
@@ -259,7 +268,7 @@ input[type=checkbox]#gnbcheck{ display: none; }
 }
 
 .card-wrap .card .card-img{
-  width: 48%;
+  width: 42%;
 }
 
 .card-wrap .card .card-img img{
@@ -267,7 +276,7 @@ input[type=checkbox]#gnbcheck{ display: none; }
 }
 
 .card-wrap .card .card-text{
-  width: 49%;
+  width: 50%;
 }
 
 
@@ -275,8 +284,9 @@ input[type=checkbox]#gnbcheck{ display: none; }
 .skill_Wrap{
   margin-top: 40px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 20px 0px;
+  background: #fff;
 }
 
 .skill_Wrap h2{
@@ -317,7 +327,7 @@ input[type=checkbox]#gnbcheck{ display: none; }
 .profile {
   padding-top: 150px;
   text-align: center;
-  background:#fff;
+  background:#f4f6f9;
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: 100px;
@@ -326,10 +336,14 @@ input[type=checkbox]#gnbcheck{ display: none; }
 .profile h3 {
   margin: 0;
   margin-bottom: 37px;
-  font-size: 4.0rem;
+  font-size: 3.6rem;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: -0.04em;
+  color: #333;
+  line-height: 150%;
 }
+
+.profile h3 span{font-size: 3.6rem; font-weight: bold; border-bottom: 2px solid #000; color: #000;}
 
 .profile .profile-left p {
   margin: 0;
@@ -353,24 +367,32 @@ input[type=checkbox]#gnbcheck{ display: none; }
 .profile .profile-right{
   text-align: left;
   margin-left: 5%;
-  width: 60%;
+  width: 100%;
 }
 
 .profile .profile-right h2{
   font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
+  font-weight: 600;
 }
 
 .profile .profile-right h2 i{
   font-size: 26px;
   margin-right: 10px;
+  font-weight: 100;
 }
 
 .profile .profile-right p{
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 8px;
+  font-weight: 400;
+}
+
+.profile .profile-right span{
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .profile .profile-right .edu{
